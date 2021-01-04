@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Don't forget!</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="js-clock clock">
+        <h1 class="js-title">00:00:00</h1>
+    </div>
+    <form class="js-form form nameForm">
+        <input type="text" placeholder="What's your name?"/>
+    </form>
+    <h4 class="js-greeting greeting"></h4>
+
+    <form class="js-toDoForm toDoForm">
+        <input type="text" placeholder="Write a to do"/>
+    </form>
+    <ul class="js-toDoList toDoList">
+
+    </ul>
+
+    <div class="weather">
+        <span class="js-weather temperature"></span><br/>
+        <span class="js-city city"></span>
+    </div>
+
+    <!-- 설정 -->
+    <img class="setting" src="img/setting.svg"/>
+    <!-- 설정 리스트 -->
+    <ul class="settingList disabled">
+            <li>
+                <h4>24시간</h4>
+                <input class="tgl tgl-skewed" id="is24" type="checkbox"/>
+                <label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="is24"></label>
+            </li>
+            <li class="line"></li>
+    </ul>
+
+    <!-- <p class="js-wiseRemark wiseRemark"></p> -->
+
+    <script src="js/background.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/wiseremark.js"></script>
+    <script src="js/setting.js"></script>
+</body>
+</html>
